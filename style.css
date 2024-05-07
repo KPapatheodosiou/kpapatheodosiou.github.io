@@ -56,23 +56,34 @@ body{
     margin-top: 10px;
 }
 
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+
+}
+
+
 
 #countlabel{
-    display: block;
+    
     font-size: 10rem;
     text-align: center;
     font-family:'calculator', sans-serif;
     border: black solid 2px;
     border-radius: 40px;
     background-color: rgba(128, 128, 128, 0.164);
-    width: 500px;
-    margin: auto;
     margin-bottom: 10px;
     
 }
 
 #btns{
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
 }
 
@@ -86,4 +97,22 @@ body{
 
 .Btn:hover{
     background-color: rgb(127, 255, 212);
+}
+
+@media (max-width:422px){
+    
+
+    #btns{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      
+    
+    }
+
+    #btns > button{
+        margin-top: 10px;
+    }
 }
